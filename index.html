@@ -3,9 +3,583 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacques Twizeyimana</title>
+    <title>Jacques Twizeyimana - Full Stack Developer</title>
+    <meta name="description" content="Personal resume website of Jacques Twizeyimana, Full Stack Developer specializing in modern web technologies">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to my resume</h1>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">JT</a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="nav__close-icon">&times;</i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Jacques Twizeyimana</h1>
+                        <h2 class="home__profession">Full Stack Developer</h2>
+                        <p class="home__description">
+                            Passionate about creating exceptional digital experiences through clean code, 
+                            innovative solutions, and user-centered design. Specializing in modern web technologies 
+                            with 5+ years of experience.
+                        </p>
+                        
+                        <div class="home__buttons">
+                            <a href="#contact" class="btn btn--primary">
+                                <span>Hire Me</span>
+                                <i class="btn__icon">→</i>
+                            </a>
+                            <a href="#projects" class="btn btn--secondary">
+                                <span>View Work</span>
+                                <i class="btn__icon">👁</i>
+                            </a>
+                        </div>
+                        
+                        <div class="home__social">
+                            <a href="https://github.com/jacques-twizeyimana" target="_blank" class="home__social-link" aria-label="Github">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/twizeyimana-jacques/" target="_blank" class="home__social-link" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:twizojacques@gmail.com" class="home__social-link" aria-label="Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h3.819l6.545 4.91 6.545-4.91h3.819A1.636 1.636 0 0 1 24 5.457z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Get to know me</span>
+                    <h2 class="section__title">About Me</h2>
+                </div>
+                
+                <div class="about__container">
+                    <div class="about__content">
+                        <div class="about__info">
+                            <h3 class="about__title">Full Stack Developer with a passion for innovation</h3>
+                            <p class="about__description">
+                                I'm a dedicated full stack developer with over 5 years of experience creating 
+                                robust web applications and digital solutions. My expertise spans both frontend 
+                                and backend technologies, with a strong focus on user experience and performance optimization.
+                            </p>
+                            <p class="about__description">
+                                When I'm not coding, you'll find me exploring new technologies, contributing to 
+                                open-source projects, or mentoring junior developers. I believe in continuous 
+                                learning and staying up-to-date with the latest industry trends.
+                            </p>
+                            
+                            <div class="about__stats">
+                                <div class="about__stat">
+                                    <span class="about__stat-number">50+</span>
+                                    <span class="about__stat-label">Projects Completed</span>
+                                </div>
+                                <div class="about__stat">
+                                    <span class="about__stat-number">5+</span>
+                                    <span class="about__stat-label">Years Experience</span>
+                                </div>
+                                <div class="about__stat">
+                                    <span class="about__stat-number">20+</span>
+                                    <span class="about__stat-label">Happy Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">What I know</span>
+                    <h2 class="section__title">My Skills</h2>
+                </div>
+                
+                <div class="skills__container">
+                    <div class="skills__content">
+                        <h3 class="skills__title">Frontend Development</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <div class="skills__info">
+                                        <span class="skills__name">HTML/CSS</span>
+                                        <span class="skills__level">95%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__info">
+                                        <span class="skills__name">JavaScript</span>
+                                        <span class="skills__level">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__info">
+                                        <span class="skills__name">React</span>
+                                        <span class="skills__level">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__react"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__content">
+                        <h3 class="skills__title">Backend Development</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <div class="skills__info">
+                                        <span class="skills__name">Node.js</span>
+                                        <span class="skills__level">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__node"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__info">
+                                        <span class="skills__name">Python</span>
+                                        <span class="skills__level">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__info">
+                                        <span class="skills__name">Database</span>
+                                        <span class="skills__level">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__db"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My journey</span>
+                    <h2 class="section__title">Work Experience</h2>
+                </div>
+                
+                <div class="experience__container">
+                    <div class="experience__content">
+                        <div class="experience__data">
+                            <div class="experience__header">
+                                <h3 class="experience__title">Senior Full Stack Developer</h3>
+                                <span class="experience__company">Tech Solutions Inc.</span>
+                                <span class="experience__date">2022 - Present</span>
+                            </div>
+                            <p class="experience__description">
+                                Leading development of scalable web applications using React, Node.js, and cloud technologies. 
+                                Mentoring junior developers and implementing best practices for code quality and performance.
+                            </p>
+                            <ul class="experience__list">
+                                <li>Reduced application load time by 40% through optimization</li>
+                                <li>Led a team of 4 developers on multiple projects</li>
+                                <li>Implemented CI/CD pipelines improving deployment efficiency</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience__data">
+                            <div class="experience__header">
+                                <h3 class="experience__title">Full Stack Developer</h3>
+                                <span class="experience__company">Digital Innovations</span>
+                                <span class="experience__date">2020 - 2022</span>
+                            </div>
+                            <p class="experience__description">
+                                Developed and maintained multiple client projects using modern JavaScript frameworks 
+                                and backend technologies. Collaborated with design teams to create user-friendly interfaces.
+                            </p>
+                            <ul class="experience__list">
+                                <li>Built 15+ responsive web applications</li>
+                                <li>Integrated payment systems and third-party APIs</li>
+                                <li>Improved client satisfaction rates by 25%</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience__data">
+                            <div class="experience__header">
+                                <h3 class="experience__title">Frontend Developer</h3>
+                                <span class="experience__company">StartUp Labs</span>
+                                <span class="experience__date">2019 - 2020</span>
+                            </div>
+                            <p class="experience__description">
+                                Focused on creating engaging user interfaces and implementing responsive designs. 
+                                Worked closely with UX designers to bring mockups to life.
+                            </p>
+                            <ul class="experience__list">
+                                <li>Converted 20+ designs to pixel-perfect interfaces</li>
+                                <li>Implemented mobile-first responsive designs</li>
+                                <li>Optimized website performance and accessibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="experience__education">
+                        <h3 class="education__title">Education</h3>
+                        <div class="education__content">
+                            <div class="education__data">
+                                <h4 class="education__study">Bachelor of Computer Science</h4>
+                                <span class="education__university">University of Technology</span>
+                                <span class="education__year">2015 - 2019</span>
+                                <p class="education__description">
+                                    Graduated Magna Cum Laude with a focus on Software Engineering and Web Development. 
+                                    Active member of the Programming Club and participated in multiple hackathons.
+                                </p>
+                            </div>
+                            
+                            <div class="education__data">
+                                <h4 class="education__study">Full Stack Web Development</h4>
+                                <span class="education__university">Online Bootcamp</span>
+                                <span class="education__year">2019</span>
+                                <p class="education__description">
+                                    Intensive 6-month program covering modern web development technologies, 
+                                    best practices, and real-world project experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My work</span>
+                    <h2 class="section__title">Featured Projects</h2>
+                </div>
+                
+                <div class="projects__container">
+                    <article class="project__card" data-project="1">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-commerce Platform" class="project__img" loading="lazy">
+                        <div class="project__content">
+                            <h3 class="project__title">E-commerce Platform</h3>
+                            <p class="project__description">
+                                Full-featured e-commerce solution with user authentication, payment processing, 
+                                and admin dashboard. Built with React and Node.js.
+                            </p>
+                            <div class="project__technologies">
+                                <span class="project__tech">React</span>
+                                <span class="project__tech">Node.js</span>
+                                <span class="project__tech">MongoDB</span>
+                                <span class="project__tech">Stripe</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" target="_blank">
+                                    <span>Live Demo</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project__link" target="_blank">
+                                    <span>Code</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project__card" data-project="2">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Task Management App" class="project__img" loading="lazy">
+                        <div class="project__content">
+                            <h3 class="project__title">Task Management App</h3>
+                            <p class="project__description">
+                                Collaborative task management application with real-time updates, team collaboration, 
+                                and project tracking features.
+                            </p>
+                            <div class="project__technologies">
+                                <span class="project__tech">Vue.js</span>
+                                <span class="project__tech">Express</span>
+                                <span class="project__tech">Socket.IO</span>
+                                <span class="project__tech">PostgreSQL</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" target="_blank">
+                                    <span>Live Demo</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project__link" target="_blank">
+                                    <span>Code</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project__card" data-project="3">
+                        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Weather Dashboard" class="project__img" loading="lazy">
+                        <div class="project__content">
+                            <h3 class="project__title">Weather Dashboard</h3>
+                            <p class="project__description">
+                                Interactive weather dashboard with location-based forecasts, historical data, 
+                                and beautiful data visualizations.
+                            </p>
+                            <div class="project__technologies">
+                                <span class="project__tech">JavaScript</span>
+                                <span class="project__tech">Chart.js</span>
+                                <span class="project__tech">Weather API</span>
+                                <span class="project__tech">CSS Grid</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" target="_blank">
+                                    <span>Live Demo</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project__link" target="_blank">
+                                    <span>Code</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Get in touch</span>
+                    <h2 class="section__title">Contact Me</h2>
+                </div>
+                
+                <div class="contact__container">
+                    <div class="contact__content">
+                        <div class="contact__info">
+                            <h3 class="contact__title">Let's work together</h3>
+                            <p class="contact__description">
+                                I'm always interested in new opportunities and exciting projects. 
+                                Whether you're looking for a developer to join your team or need help 
+                                with a specific project, I'd love to hear from you.
+                            </p>
+                            
+                            <div class="contact__data">
+                                <div class="contact__information">
+                                    <svg class="contact__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    <div>
+                                        <span class="contact__data-title">Location</span>
+                                        <span class="contact__data-info">San Francisco, CA</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__information">
+                                    <svg class="contact__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                    <div>
+                                        <span class="contact__data-title">Phone</span>
+                                        <span class="contact__data-info">+1 (555) 123-4567</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__information">
+                                    <svg class="contact__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                    <div>
+                                        <span class="contact__data-title">Email</span>
+                                        <span class="contact__data-info">john.doe@example.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <form class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Name *</label>
+                                <input type="text" name="name" placeholder="Enter your name" class="contact__form-input" required>
+                                <span class="contact__form-error" id="name-error"></span>
+                            </div>
+                            
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Email *</label>
+                                <input type="email" name="email" placeholder="Enter your email" class="contact__form-input" required>
+                                <span class="contact__form-error" id="email-error"></span>
+                            </div>
+                            
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Subject *</label>
+                                <input type="text" name="subject" placeholder="Enter the subject" class="contact__form-input" required>
+                                <span class="contact__form-error" id="subject-error"></span>
+                            </div>
+                            
+                            <div class="contact__form-div contact__form-area">
+                                <label class="contact__form-tag">Message *</label>
+                                <textarea name="message" cols="30" rows="10" placeholder="Write your message" class="contact__form-input" required></textarea>
+                                <span class="contact__form-error" id="message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary contact__button">
+                                <span>Send Message</span>
+                                <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__data">
+                    <h3 class="footer__title">Jacques Twizeyimana</h3>
+                    <p class="footer__description">
+                        Full Stack Developer passionate about creating exceptional digital experiences.
+                    </p>
+                    
+                    <div class="footer__social">
+                        <a href="https://github.com" target="_blank" class="footer__social-link" aria-label="Github">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:john@example.com" class="footer__social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Quick Links</h4>
+                    <ul class="footer__list">
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#experience" class="footer__link">Experience</a></li>
+                        <li><a href="#projects" class="footer__link">Projects</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    © 2025 Jacques Twizeyimana. All rights reserved. | Built with ❤️ and lots of ☕
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close">&times;</button>
+            <div class="modal__body">
+                <img src="" alt="" class="modal__img" id="modal-img">
+                <div class="modal__info">
+                    <h3 class="modal__title" id="modal-title"></h3>
+                    <p class="modal__description" id="modal-description"></p>
+                    <div class="modal__technologies" id="modal-technologies"></div>
+                    <div class="modal__links" id="modal-links"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
 </body>
 </html>
