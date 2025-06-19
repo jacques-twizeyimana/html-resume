@@ -9,7 +9,7 @@ class ResumeWebsite {
     init() {
         this.setupEventListeners();
         this.initializeAnimations();
-        this.setupSkillBars();
+        // this.setupSkillBars();
         this.setupFormValidation();
         this.setupProjectModal();
         this.setupScrollEffects();
@@ -48,8 +48,8 @@ class ResumeWebsite {
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (navMenu.classList.contains('show-menu') && 
-                !navMenu.contains(e.target) && 
+            if (navMenu.classList.contains('show-menu') &&
+                !navMenu.contains(e.target) &&
                 !navToggle.contains(e.target)) {
                 navMenu.classList.remove('show-menu');
                 document.body.style.overflow = 'auto';
@@ -64,7 +64,7 @@ class ResumeWebsite {
                 if (target) {
                     const headerHeight = document.querySelector('.header').offsetHeight;
                     const targetPosition = target.offsetTop - headerHeight;
-                    
+
                     window.scrollTo({
                         top: targetPosition,
                         behavior: 'smooth'
@@ -132,12 +132,12 @@ class ResumeWebsite {
      */
     setupSkillBars() {
         const skillBars = document.querySelectorAll('.skills__percentage');
-        
+
         const skillObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     // Trigger the CSS animation by adding the width
-                    entry.target.style.width = entry.target.style.width || 
+                    entry.target.style.width = entry.target.style.width ||
                         getComputedStyle(entry.target).getPropertyValue('width');
                 }
             });
@@ -290,7 +290,7 @@ class ResumeWebsite {
             // Success simulation
             this.showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
             form.reset();
-            
+
         } catch (error) {
             // Error simulation
             this.showNotification('Failed to send message. Please try again later.', 'error');
@@ -534,7 +534,7 @@ class ResumeWebsite {
 
         // Add to DOM and show
         document.body.appendChild(notification);
-        
+
         // Trigger animation
         setTimeout(() => {
             notification.classList.add('show');
@@ -585,7 +585,7 @@ function debounce(func, wait) {
  */
 function throttle(func, limit) {
     let inThrottle;
-    return function() {
+    return function () {
         const args = arguments;
         const context = this;
         if (!inThrottle) {
